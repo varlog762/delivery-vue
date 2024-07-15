@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "title": "Пицца плюс",
+    "time": 50,
+    "rating": 4.5,
+    "type": "Пицца/Суши",
+    "price": 900,
+    "imagePath": "./assets/images/1.jpg"
+  },
+  {
+    "id": 1,
+    "title": "Тануки",
+    "time": 30,
+    "rating": 4.7,
+    "type": "Суши",
+    "price": 1050,
+    "imagePath": "./assets/images/2.jpg"
+  },
+  {
+    "id": 2,
+    "title": "FoodBand",
+    "time": 45,
+    "rating": 4.7,
+    "type": "Пицца",
+    "price": 850,
+    "imagePath": "./assets/images/3.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Жадина-пицца",
+    "time": 40,
+    "rating": 4.6,
+    "type": "Суши",
+    "price": 950,
+    "imagePath": "./assets/images/4.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Точка еды",
+    "time": 45,
+    "rating": 4.4,
+    "type": "Суши",
+    "price": 1100,
+    "imagePath": "./assets/images/5.jpg"
+  },
+  {
+    "id": 5,
+    "title": "PizzaBurger",
+    "time": 50,
+    "rating": 4.9,
+    "type": "Пицца",
+    "price": 900,
+    "imagePath": "./assets/images/6.jpg"
+  }
+]
