@@ -14,6 +14,7 @@ const getRestaurantsData = async () => {
     const data = await fetchDataService.getData(API_URL);
     restaurantsData.value = data;
   } catch (error) {
+    error.value = error;
     throw error;
   } finally {
     isLoading.value = false;
