@@ -1,7 +1,28 @@
 <script setup>
+import { ref, onMounted } from 'vue';
 
-// const restaurantsData = 
+import fetchDataService from '@/services/fetchDataService';
 
+const API_URL = '/src/assets/json/rests.json';
+
+const restaurantsData = ref([]);
+const isLoading = ref(true);
+const error = ref(null);
+
+const getRestaurantsData = async () => {
+  try {
+    const data = await fetchDataService.getData(API_URL);
+    restaurantsData.value = data;
+  } catch (error) {
+    throw error;
+  } finally {
+    isLoading.value = false;
+  }
+}
+
+onMounted(() => {
+  getRestaurantsData();
+})
 </script>
 
 <template>
