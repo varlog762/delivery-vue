@@ -1,4 +1,7 @@
 <script setup>
+
+// const restaurantsData = 
+
 </script>
 
 <template>
