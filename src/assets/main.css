@@ -11,22 +11,12 @@ body {
   position: relative;
 }
 
-body.modal-open {
-  overflow: hidden;
-}
-
 a {
   text-decoration: none;
 }
 
 ul {
   list-style-type: none;
-}
-
-.page-wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 .container {

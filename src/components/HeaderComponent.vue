@@ -1,4 +1,10 @@
 <script setup>
+import { defineEmits } from 'vue'
+
+const emit = defineEmits(['openModal']);
+
+const openModal = () => emit('openModal');
+
 </script>
 
 <template>
@@ -16,8 +22,8 @@
             <img src="../assets/icons/user.svg" alt="user icon" class="user-icon icon">
             Войти
           </button>
-          <button type="button" id="cart-btn" class="btn outline-btn">
-            <img src="../assets/icons/cart.svg" alt="cart icon" class="user-icon icon">
+          <button type="button" class="btn outline-btn" @click="openModal()">
+            <img src="../assets/icons/cart.svg" alt="cart logo" class="user-icon icon">
             Корзина</button>
         </div>
       </div>

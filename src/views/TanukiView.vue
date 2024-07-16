@@ -1,4 +1,4 @@
-<script></script>
+<script setup></script>
 
 <template>
   <section class="restaurants">
