@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import HomeView from '../views/HomeView.vue';
-import TanukiView from '../views/TanukiView.vue';
+import RestaurantView from '../views/RestaurantView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,8 +11,8 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/tanuki',
-      component: TanukiView,
+      path: '/restaurant/:slug',
+      component: RestaurantView,
     },
   ],
 });

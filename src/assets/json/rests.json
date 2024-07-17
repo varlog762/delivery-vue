@@ -1,39 +1,82 @@
 [
   {
     "id": 0,
-    "title": "Пицца плюс",
+    "title": "Терра",
     "time": 50,
     "rating": 4.5,
     "type": "Пицца/Суши",
     "price": 900,
-    "imagePath": "./assets/images/1.jpg"
+    "imagePath": "/src/assets/images/1.jpg",
+    "slug": "terra"
   },
   {
     "id": 1,
-    "title": "Тануки",
+    "title": "Токини",
     "time": 30,
     "rating": 4.7,
     "type": "Суши",
     "price": 1050,
-    "imagePath": "./assets/images/2.jpg"
+    "imagePath": "/src/assets/images/2.jpg",
+    "slug": "tokini",
+    "products": [
+      {
+        "id": 1,
+        "title": "Ролл угорь стандарт",
+        "descripyion": "Рис, угорь, соус унаги, кунжут, водоросли нори.",
+        "price": 17
+      },
+      {
+        "id": 2,
+        "title": "Калифорния лосось стандарт",
+        "descripyion": "Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.",
+        "price": 18
+      },
+      {
+        "id": 3,
+        "title": "Окинава стандарт",
+        "descripyion": "Рис, креветка отварная, сыр сливочный, лосось, огурец свежий, водоросли нори.",
+        "price": 20
+      },
+      {
+        "id": 4,
+        "title": "Цезарь маки хl",
+        "descripyion": "Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь, водоросли нори.,",
+        "price": 17
+      },
+      {
+        "id": 5,
+        "title": "Ясай маки стандарт",
+        "descripyion": "Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг, водоросли нори.",
+        "price": 15
+      },
+      {
+        "id": 6,
+        "title": "Ролл с креветкой стандарт",
+        "descripyion": "Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы, водоросли нори.",
+        "price": 17
+      }
+
+    ]
   },
   {
     "id": 2,
-    "title": "FoodBand",
+    "title": "Пицца Лисица",
     "time": 45,
     "rating": 4.7,
     "type": "Пицца",
     "price": 850,
-    "imagePath": "./assets/images/3.jpg"
+    "imagePath": "/src/assets/images/3.jpg",
+    "slug": "lisica"
   },
   {
     "id": 3,
-    "title": "Жадина-пицца",
+    "title": "Суши Весла",
     "time": 40,
     "rating": 4.6,
     "type": "Суши",
     "price": 950,
-    "imagePath": "./assets/images/4.jpg"
+    "imagePath": "/src/assets/images/4.jpg",
+    "slug": "vesla"
   },
   {
     "id": 4,
@@ -42,15 +85,17 @@
     "rating": 4.4,
     "type": "Суши",
     "price": 1100,
-    "imagePath": "./assets/images/5.jpg"
+    "imagePath": "/src/assets/images/5.jpg",
+    "slug": "tochka"
   },
   {
     "id": 5,
-    "title": "PizzaBurger",
+    "title": "Пицца Темпо",
     "time": 50,
     "rating": 4.9,
     "type": "Пицца",
-    "price": 900,
-    "imagePath": "./assets/images/6.jpg"
+    "price": 10,
+    "imagePath": "/src/assets/images/6.jpg",
+    "slug": "tempo"
   }
 ]
