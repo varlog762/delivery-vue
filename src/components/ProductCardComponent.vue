@@ -55,6 +55,8 @@ const props = defineProps({ productDataProps: Object });
 
 .card-description {
   padding: 20px 24px 34px 24px;
+
+
 }
 
 .product-card-description {
@@ -62,6 +64,11 @@ const props = defineProps({ productDataProps: Object });
   font-size: 18px;
   color: var(--gray---gray-7);
   margin-bottom: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .product-card-info-wrapper {

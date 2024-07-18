@@ -117,7 +117,6 @@
         "price": 17,
         "weight": 400
       }
-
     ]
   },
   {
@@ -186,19 +185,119 @@
     "time": 40,
     "rating": 4.6,
     "type": "Суши",
-    "price": 950,
+    "price": 12,
     "imagePath": "/src/assets/images/4.jpg",
-    "slug": "vesla"
+    "slug": "vesla",
+    "products": [
+      {
+        "id": 1,
+        "title": "Авокадо маки",
+        "description": "Авокадо, майонез.",
+        "imagePath": "/src/assets/images/vesla-avocado-maki.png",
+        "price": 12,
+        "weight": 400
+      },
+      {
+        "id": 2,
+        "title": "Спайси сяке маки",
+        "description": "Лосось, острый соус.",
+        "imagePath": "/src/assets/images/vesla-spicy-syace-maki.png",
+        "price": 14,
+        "weight": 400
+      },
+      {
+        "id": 3,
+        "title": "Спайси текка маки",
+        "description": "Тунец, острый соус.",
+        "imagePath": "/src/assets/images/vesla-spicy-tekka-maki.png",
+        "price": 13,
+        "weight": 400
+      },
+      {
+        "id": 4,
+        "title": "Сяке авокадо маки",
+        "description": "Лосось, авокадо.",
+        "imagePath": "/src/assets/images/vesla-syace-avocado-maki.png",
+        "price": 14,
+        "weight": 400
+      },
+      {
+        "id": 5,
+        "title": "Сяке маки",
+        "description": "Лосось.",
+        "imagePath": "/src/assets/images/vesla-syake-make.png",
+        "price": 15,
+        "weight": 400
+      },
+      {
+        "id": 6,
+        "title": "Текка маки",
+        "description": "Тунец.",
+        "imagePath": "/src/assets/images/vesla-tekka-maki.png",
+        "price": 17,
+        "weight": 400
+      }
+    ]
   },
   {
     "id": 4,
     "title": "Точка еды",
     "time": 45,
     "rating": 4.4,
-    "type": "Суши",
-    "price": 1100,
+    "type": "Пицца",
+    "price": 19,
     "imagePath": "/src/assets/images/5.jpg",
-    "slug": "tochka"
+    "slug": "tochka",
+    "products": [
+      {
+        "id": 1,
+        "title": "Римская пицца Трюфельная",
+        "description": "Пепперони, шампиньоны, сыр пармезан, руккола, сыр моцарелла, томатный соус, масло с ароматом трюфеля.",
+        "imagePath": "/src/assets/images/tochka-truf.jpg",
+        "price": 19,
+        "weight": 400
+      },
+      {
+        "id": 2,
+        "title": "Римская пицца Пепперони",
+        "description": "Пепперони, сыр моцарелла, томатный соус, томаты, сыр фета, соус песто.",
+        "imagePath": "/src/assets/images/tochka-peppe.jpg",
+        "price": 21,
+        "weight": 400
+      },
+      {
+        "id": 3,
+        "title": "Римская пицца Пиканта",
+        "description": "Ветчина, сыр фета, шампиньоны, красный лук, руккола, сыр моцарелла, томатный соус.",
+        "imagePath": "/src/assets/images/tochka-pekanta.jpg",
+        "price": 20,
+        "weight": 400
+      },
+      {
+        "id": 4,
+        "title": "Римская пицца Блю чиз",
+        "description": "Груша, голубой сыр, руккола, сыр моцарелла, сливочный соус.",
+        "imagePath": "/src/assets/images/tochka-pear-blue-cheese.jpg",
+        "price": 19,
+        "weight": 400
+      },
+      {
+        "id": 5,
+        "title": "Римская пицца Маринара",
+        "description": "Креветки, сыр моцарелла, томатный соус, томаты, зеленый перец, салат айсберг, соус азиатский чили.",
+        "imagePath": "/src/assets/images/tochka-mideteran.jpg",
+        "price": 22,
+        "weight": 400
+      },
+      {
+        "id": 6,
+        "title": "Римская пицца Терияки",
+        "description": "Курица, соус терияки, зеленый перец, томаты черри, кунжут белый, сыр моцарелла, томатный соус.",
+        "imagePath": "/src/assets/images/tochka-chick-teri.jpg",
+        "price": 21,
+        "weight": 400
+      }
+    ]
   },
   {
     "id": 5,
@@ -213,7 +312,7 @@
       {
         "id": 1,
         "title": "Пицца Баварская",
-        "description": "Рис, угорь, соус унаги, кунжут, водоросли нори.",
+        "description": "Моцарелла, колбаски из курицы и свинины, колбаса Пепперони, запеченный сладкий перец, карамелизированный лук, соус Барбекю, сырный соус.",
         "imagePath": "/src/assets/images/bavaria-tempo.jpg",
         "price": 17,
         "weight": 400
@@ -221,7 +320,7 @@
       {
         "id": 2,
         "title": "Пицца Диабло",
-        "description": "Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.",
+        "description": "Моцарелла, салями, колбаса Пепперони, имбирный соус, красный лук, Халапеньо, приправа к пицце, масло чесночное.",
         "imagePath": "/src/assets/images/diablo-tempo.jpg",
         "price": 18,
         "weight": 400
@@ -229,7 +328,7 @@
       {
         "id": 3,
         "title": "Пицца Маргарита",
-        "description": "Рис, креветка отварная, сыр сливочный, лосось, водоросли нори.",
+        "description": "Моцарелла, Моццарелла в рассоле, приправа к пицце, масло чесночное.",
         "imagePath": "/src/assets/images/margo-tempo.jpg  ",
         "price": 20,
         "weight": 400
@@ -237,7 +336,7 @@
       {
         "id": 4,
         "title": "Пицца Супер Пепперони",
-        "description": "Рис, куриная грудка копченая, икра масаго, томат, водоросли нори.",
+        "description": "Моцарелла, колбаса пепперони, приправа к пицце, масло чесночное..",
         "imagePath": "/src/assets/images/pepper-tempo.jpg",
         "price": 17,
         "weight": 400
@@ -245,7 +344,7 @@
       {
         "id": 5,
         "title": "Пицца Сицилийская",
-        "description": "Рис, помидор свежий, перец, авокадо, огурец, водоросли нори.",
+        "description": "Моцарелла, курица, шампиньоны, перец Пепперони, перец Чили, приправа к пицце, масло чесночное.",
         "imagePath": "/src/assets/images/sicili-tempo.jpg",
         "price": 17,
         "weight": 400
@@ -253,7 +352,7 @@
       {
         "id": 6,
         "title": "Пицца Соренто",
-        "description": "Рис, водоросли нори, креветки отварные, огурцы, водоросли нори.",
+        "description": "Моцарелла, говядина, бекон, соус барбекю, сладкий перец, приправа к пицце, масло чесночное.",
         "imagePath": "/src/assets/images/sorento-tempo.jpg",
         "price": 17,
         "weight": 400
