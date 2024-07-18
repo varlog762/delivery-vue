@@ -1,13 +1,63 @@
 [
   {
     "id": 0,
-    "title": "Терра",
+    "title": "Терра Пицца",
     "time": 50,
-    "rating": 4.5,
-    "type": "Пицца/Суши",
-    "price": 900,
+    "rating": 4.8,
+    "type": "Пицца",
+    "price": 19,
     "imagePath": "/src/assets/images/1.jpg",
-    "slug": "terra"
+    "slug": "terra",
+    "products": [
+      {
+        "id": 1,
+        "title": "Пицца Супер Суприм",
+        "description": "Пепперони, свинина, говядина, сыр моцарелла, томатный соус, грибы.",
+        "imagePath": "/src/assets/images/terra-supreme.jpg",
+        "price": 19,
+        "weight": 400
+      },
+      {
+        "id": 2,
+        "title": "Пицца Гавайская",
+        "description": "Ветчина, сыр моцарелла, томатный соус, ананас.",
+        "imagePath": "/src/assets/images/terra-hawaii.jpg",
+        "price": 20,
+        "weight": 400
+      },
+      {
+        "id": 3,
+        "title": "Пицца Курица Терияки",
+        "description": "Курица, соус терияки, томаты черри, сыр моцарелла, томатный соус.",
+        "imagePath": "/src/assets/images/terra-chick-ter.jpg",
+        "price": 20,
+        "weight": 400
+      },
+      {
+        "id": 4,
+        "title": "Пицца Цезарь",
+        "description": "Курица, бекон, сыр моцарелла, голубой сыр, сыр пармезан, салат айсберг.",
+        "imagePath": "/src/assets/images/terra-caesar.jpg",
+        "price": 21,
+        "weight": 400
+      },
+      {
+        "id": 5,
+        "title": "Пицца 4 сезона",
+        "description": "Пепперони, ветчина, сыр фета, голубой сыр, шампиньоны, лук, маслины, сыр.",
+        "imagePath": "/src/assets/images/terra-4-seasons.jpg",
+        "price": 22,
+        "weight": 400
+      },
+      {
+        "id": 6,
+        "title": "Пицца Четыре Сыра",
+        "description": "Моцарелла, пармезан, чеддер, сыр с голубой плесенью, томатный соус.",
+        "imagePath": "/src/assets/images/terra-4-cheese.jpg",
+        "price": 19,
+        "weight": 400
+      }
+    ]
   },
   {
     "id": 1,
@@ -15,58 +65,120 @@
     "time": 30,
     "rating": 4.7,
     "type": "Суши",
-    "price": 1050,
+    "price": 15,
     "imagePath": "/src/assets/images/2.jpg",
     "slug": "tokini",
     "products": [
       {
         "id": 1,
         "title": "Ролл угорь стандарт",
-        "descripyion": "Рис, угорь, соус унаги, кунжут, водоросли нори.",
-        "price": 17
+        "description": "Рис, угорь, соус унаги, кунжут, водоросли нори.",
+        "imagePath": "/src/assets/images/food-1.jpg",
+        "price": 17,
+        "weight": 400
       },
       {
         "id": 2,
         "title": "Калифорния лосось стандарт",
-        "descripyion": "Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.",
-        "price": 18
+        "description": "Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.",
+        "imagePath": "/src/assets/images/food-2.jpg",
+        "price": 18,
+        "weight": 400
       },
       {
         "id": 3,
         "title": "Окинава стандарт",
-        "descripyion": "Рис, креветка отварная, сыр сливочный, лосось, огурец свежий, водоросли нори.",
-        "price": 20
+        "description": "Рис, креветка отварная, сыр сливочный, лосось, водоросли нори.",
+        "imagePath": "/src/assets/images/food-3.jpg",
+        "price": 20,
+        "weight": 400
       },
       {
         "id": 4,
         "title": "Цезарь маки хl",
-        "descripyion": "Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь, водоросли нори.,",
-        "price": 17
+        "description": "Рис, куриная грудка копченая, икра масаго, томат, водоросли нори.",
+        "imagePath": "/src/assets/images/food-4.jpg",
+        "price": 17,
+        "weight": 400
       },
       {
         "id": 5,
         "title": "Ясай маки стандарт",
-        "descripyion": "Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг, водоросли нори.",
-        "price": 15
+        "description": "Рис, помидор свежий, перец, авокадо, огурец, водоросли нори.",
+        "imagePath": "/src/assets/images/food-5.jpg",
+        "price": 15,
+        "weight": 400
       },
       {
         "id": 6,
         "title": "Ролл с креветкой стандарт",
-        "descripyion": "Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы, водоросли нори.",
-        "price": 17
+        "description": "Рис, водоросли нори, креветки отварные, огурцы, водоросли нори.",
+        "imagePath": "/src/assets/images/food-6.jpg",
+        "price": 17,
+        "weight": 400
       }
 
     ]
   },
   {
     "id": 2,
-    "title": "Пицца Лисица",
+    "title": "Пицца Лисицца",
     "time": 45,
     "rating": 4.7,
     "type": "Пицца",
-    "price": 850,
+    "price": 16,
     "imagePath": "/src/assets/images/3.jpg",
-    "slug": "lisica"
+    "slug": "lisica",
+    "products": [
+      {
+        "id": 1,
+        "title": "Пицца Чикен Барбекю",
+        "description": "Моцарелла, курица барбекю, маринованные опята, соус Ранч.",
+        "imagePath": "/src/assets/images/chick-fox.jpg",
+        "price": 17,
+        "weight": 400
+      },
+      {
+        "id": 2,
+        "title": "Пицца Экстра",
+        "description": "Моцарелла, бекон, свинина, маринованные огурцы, Халапеньо.",
+        "imagePath": "/src/assets/images/extra-fox.jpg",
+        "price": 18,
+        "weight": 400
+      },
+      {
+        "id": 3,
+        "title": "Пицца Огненная",
+        "description": "Моцарелла, бекон, перец Чили, Халапеньо, Охотничий соус.",
+        "imagePath": "/src/assets/images/fire-fox.jpg",
+        "price": 20,
+        "weight": 400
+      },
+      {
+        "id": 4,
+        "title": "Пицца Римская",
+        "description": "Моцарелла, курица, бекон, сырный соус, маринованные огурцы.",
+        "imagePath": "/src/assets/images/rome-fox.jpg",
+        "price": 17,
+        "weight": 400
+      },
+      {
+        "id": 5,
+        "title": "Пицца Ромео",
+        "description": "Моцарелла, ветчина, свинина, соус Ранч.",
+        "imagePath": "/src/assets/images/romeo-fox.jpg",
+        "price": 16,
+        "weight": 400
+      },
+      {
+        "id": 6,
+        "title": "Пицца Охотничья",
+        "description": "Моцарелла, шампиньоны, бекон, говядина, Охотничий соус, перец Чили.",
+        "imagePath": "/src/assets/images/hunt-fox.jpg",
+        "price": 17,
+        "weight": 400
+      }
+    ]
   },
   {
     "id": 3,
@@ -94,8 +206,58 @@
     "time": 50,
     "rating": 4.9,
     "type": "Пицца",
-    "price": 10,
+    "price": 17,
     "imagePath": "/src/assets/images/6.jpg",
-    "slug": "tempo"
+    "slug": "tempo",
+    "products": [
+      {
+        "id": 1,
+        "title": "Пицца Баварская",
+        "description": "Рис, угорь, соус унаги, кунжут, водоросли нори.",
+        "imagePath": "/src/assets/images/bavaria-tempo.jpg",
+        "price": 17,
+        "weight": 400
+      },
+      {
+        "id": 2,
+        "title": "Пицца Диабло",
+        "description": "Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.",
+        "imagePath": "/src/assets/images/diablo-tempo.jpg",
+        "price": 18,
+        "weight": 400
+      },
+      {
+        "id": 3,
+        "title": "Пицца Маргарита",
+        "description": "Рис, креветка отварная, сыр сливочный, лосось, водоросли нори.",
+        "imagePath": "/src/assets/images/margo-tempo.jpg  ",
+        "price": 20,
+        "weight": 400
+      },
+      {
+        "id": 4,
+        "title": "Пицца Супер Пепперони",
+        "description": "Рис, куриная грудка копченая, икра масаго, томат, водоросли нори.",
+        "imagePath": "/src/assets/images/pepper-tempo.jpg",
+        "price": 17,
+        "weight": 400
+      },
+      {
+        "id": 5,
+        "title": "Пицца Сицилийская",
+        "description": "Рис, помидор свежий, перец, авокадо, огурец, водоросли нори.",
+        "imagePath": "/src/assets/images/sicili-tempo.jpg",
+        "price": 17,
+        "weight": 400
+      },
+      {
+        "id": 6,
+        "title": "Пицца Соренто",
+        "description": "Рис, водоросли нори, креветки отварные, огурцы, водоросли нори.",
+        "imagePath": "/src/assets/images/sorento-tempo.jpg",
+        "price": 17,
+        "weight": 400
+      }
+    ]
   }
 ]
