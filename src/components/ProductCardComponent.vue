@@ -1,6 +1,4 @@
 <script setup>
-import { defineProps } from 'vue';
-
 const props = defineProps({ productDataProps: Object });
 </script>
 
@@ -69,6 +67,7 @@ const props = defineProps({ productDataProps: Object });
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  line-clamp: 2;
 }
 
 .product-card-info-wrapper {

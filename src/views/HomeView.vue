@@ -3,17 +3,18 @@ import { ref, onMounted } from 'vue';
 
 import fetchDataService from '@/services/fetchDataService';
 import RestaurantCardComponent from '@/components/RestaurantCardComponent.vue';
+import LoadingSpinnerComponent from '@/components/LoadingSpinnerComponent.vue';
 
 const restaurantsData = ref([]);
 const isLoading = ref(true);
-const error = ref(null);
+const errorText = ref(null);
 
 const getAllRestaurantsData = async () => {
   try {
     const data = await fetchDataService.getData();
     restaurantsData.value = data;
-  } catch (err) {
-    error.value = err;
+  } catch (error) {
+    errorText.value = error;
     throw error;
   } finally {
     isLoading.value = false;
@@ -45,9 +46,13 @@ onMounted(() => {
         <input type="text" class="restaurants-search" placeholder="Поиск блюд и ресторанов">
       </div>
     </div>
+    <div v-if="isLoading">
+      <LoadingSpinnerComponent />
+    </div>
+    <div>{{ errorText }}</div>
     <div class="cards-box">
       <div v-for="restaurant in restaurantsData" :key="restaurant.id">
-        <RestaurantCardComponent :restaurantData="restaurant"></RestaurantCardComponent>
+        <RestaurantCardComponent v-if="restaurant.slug" :restaurantData="restaurant"></RestaurantCardComponent>
       </div>
     </div>
   </section>

@@ -4,6 +4,7 @@ import { useRoute } from 'vue-router';
 
 import fetchDataService from '@/services/fetchDataService';
 import ProductCardComponent from '@/components/ProductCardComponent.vue';
+import LoadingSpinnerComponent from '@/components/LoadingSpinnerComponent.vue';
 
 const route = useRoute();
 const slug = route.params.slug;
@@ -32,10 +33,15 @@ onMounted(() => {
 
 <template>
   <section class="restaurants">
-    <div class="restaurants-title-box flex-content-start">
-      <h2 class="restaurants-title">{{ restaurantData.title }}</h2>
-      <div class="restaurant-rating"><img src="../assets/icons/star-icon.svg" alt="star icon">4.5</div>
-      <div class="restaurant-price">От {{ restaurantData.price }} руб &bull; {{ restaurantData.type }}</div>
+    <div v-if="restaurantData.price">
+      <div class="restaurants-title-box flex-content-start">
+        <h2 class="restaurants-title">{{ restaurantData.title }}</h2>
+        <div class="restaurant-rating"><img src="../assets/icons/star-icon.svg" alt="star icon">4.5</div>
+        <div class="restaurant-price">От {{ restaurantData.price }} руб &bull; {{ restaurantData.type }}</div>
+      </div>
+    </div>
+    <div v-if="isLoading">
+      <LoadingSpinnerComponent />
     </div>
     <div class="cards-box">
       <div v-for="product in productsData" :key="product.id">
