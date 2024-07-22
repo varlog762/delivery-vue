@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = '/src/assets/json/rests1.json';
+const BASE_URL = '/src/assets/json/rests.json';
 
 export default {
   async getData(url = BASE_URL) {

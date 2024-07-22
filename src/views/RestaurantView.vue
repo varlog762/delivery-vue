@@ -12,15 +12,16 @@ const slug = route.params.slug;
 const restaurantData = ref({});
 const productsData = ref([]);
 const isLoading = ref(true);
-const error = ref(null);
+const errorText = ref(null);
 
 const getRestaurantData = async () => {
   try {
     const data = await fetchDataService.getDataBySlug(slug);
     restaurantData.value = data;
     productsData.value = data.products ?? [];
-  } catch (err) {
-    error.value = err;
+  } catch (error) {
+    errorText.value = error;
+    throw error;
   } finally {
     isLoading.value = false;
   }
@@ -42,6 +43,9 @@ onMounted(() => {
     </div>
     <div v-if="isLoading">
       <LoadingSpinnerComponent />
+    </div>
+    <div v-if="errorText">
+      {{ errorText }}
     </div>
     <div class="cards-box">
       <div v-for="product in productsData" :key="product.id">

@@ -1,4 +1,8 @@
 <script setup>
+import { useCartStore } from '@/stores/cartStore.js';
+
+const cartStore = useCartStore();
+
 const emit = defineEmits(['openModal']);
 
 const openModal = () => emit('openModal');
@@ -20,9 +24,11 @@ const openModal = () => emit('openModal');
             <img src="../assets/icons/user.svg" alt="user icon" class="user-icon icon">
             Войти
           </button>
-          <button type="button" class="btn outline-btn" @click="openModal()">
+          <button type="button" class="btn outline-btn cart-btn" @click="openModal()">
             <img src="../assets/icons/cart.svg" alt="cart logo" class="user-icon icon">
-            Корзина</button>
+            Корзина
+            <div class="cart-count" v-if="cartStore.productsInCart">{{ cartStore.productsInCart }}</div>
+          </button>
         </div>
       </div>
     </div>
@@ -49,5 +55,27 @@ const openModal = () => emit('openModal');
   align-items: center;
   justify-content: end;
   gap: 8px;
+}
+
+.cart-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-count {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: var(--dust-red---red-6);
+  color: var(--gray---gray-1);
+  border: 3px solid var(--gray---gray-1);
+  border-radius: 100%;
+  line-height: 100%;
+  min-width: 28px;
+  min-height: 22px;
+  font-size: 14px;
+  padding: 4px;
 }
 </style>
