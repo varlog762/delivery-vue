@@ -27,7 +27,7 @@ const openModal = () => emit('openModal');
           <button type="button" class="btn outline-btn cart-btn" @click="openModal()">
             <img src="../assets/icons/cart.svg" alt="cart logo" class="user-icon icon">
             Корзина
-            <div class="cart-count" v-if="cartStore.productsInCart">{{ cartStore.productsInCart }}</div>
+            <div class="cart-count" v-if="cartStore.cartItemsCount">{{ cartStore.cartItemsCount }}</div>
           </button>
         </div>
       </div>

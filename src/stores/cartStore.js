@@ -2,16 +2,17 @@ import { defineStore } from 'pinia';
 
 export const useCartStore = defineStore('cart', {
   state: () => ({
-    productsInCart: [],
+    cartItems: [],
   }),
+  getters: {
+    cartItemsCount: state => state.cartItems.length,
+  },
   actions: {
     addToCart(product) {
-      this.productsInCart.push(product);
+      this.cartItems.push(product);
     },
     removeFromCart(product) {
-      this.productsInCart = this.productsInCart.filter(
-        item => item.id !== product.id
-      );
+      this.cartItems = this.cartItems.filter(item => item.id !== product.id);
     },
   },
 });

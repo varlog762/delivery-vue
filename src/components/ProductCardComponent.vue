@@ -1,5 +1,9 @@
 <script setup>
+import { useCartStore } from '@/stores/cartStore';
+
 const props = defineProps({ productDataProps: Object });
+
+const cartStore = useCartStore();
 </script>
 
 <template>
@@ -11,7 +15,7 @@ const props = defineProps({ productDataProps: Object });
       <h3 class="card-name product-card-title">{{ productDataProps.title }}</h3>
       <p class="product-card-description">{{ productDataProps.description }}</p>
       <div class="card-info-box">
-        <button type="button" class="btn primary-btn">
+        <button type="button" class="btn primary-btn" @click="cartStore.addToCart(productDataProps)">
           В корзину
           <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
